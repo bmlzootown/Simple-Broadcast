@@ -35,7 +35,7 @@ public class Main extends JavaPlugin {
 						msg = msg + args[i] + " ";
 					}
 							
-					getServer().broadcastMessage(ChatColor.translateAlternateColorCodes('&', getConfig().getString("Prefix")) + " " + ChatColor.translateAlternateColorCodes('&', msg));
+					getServer().broadcastMessage(ChatColor.translateAlternateColorCodes('&', getConfig().getString("Prefix")) + " " + ChatColor.translateAlternateColorCodes('&', msg).replace("%server-name%", getServer().getServerName()).replace("%server-motd%", getServer().getMotd()));
 			} else {
 				sender.sendMessage(ChatColor.RED + "Wrong Syntax: A message must contain at least 1 word!");
 			}
