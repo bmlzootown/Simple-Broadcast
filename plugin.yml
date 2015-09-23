@@ -1,6 +1,6 @@
 name: Simple-Broadcast
 main: ro.DarkBug198.SimpleBroadcast.Main
-version: 1.4
+version: 1.2
 commands:
    broadcast:
       description: Broadcast to everyone your important message
