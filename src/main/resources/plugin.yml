@@ -1,0 +1,18 @@
+name: Simple-Broadcast
+main: ml.bmlzootown.SimpleBroadcast
+version: 2.0.0
+commands:
+   broadcast:
+      description: Broadcast to everyone your important message
+      aliases: [bc, b, servermessage, sm]
+      permission: SimpleBroadcast.broadcast
+   broadcast-reload:
+      description: Reloads the Plugin!
+      aliases: [bc-r, b-r, servermessage-reload, sm-r, bcr, br]
+   simplebroadcast:
+      description: About Simple Broadcast plugin!
+      aliases: [sb, simpleb, sbroadcast]
+permissions:
+   SimpleBroadcast.broadcast:
+     description: Allows users to broadcast message in chat!
+     default: op
