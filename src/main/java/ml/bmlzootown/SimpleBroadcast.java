@@ -110,7 +110,7 @@ public class SimpleBroadcast extends JavaPlugin {
 				String online = Integer.toString(Bukkit.getOnlinePlayers().size());
 				String monsterlimit = Integer.toString(Bukkit.getMonsterSpawnLimit());
 
-				getServer().broadcastMessage(String.valueOf(ChatColor.translateAlternateColorCodes('&', getConfig().getString("Prefix"))) + " " + ChatColor.translateAlternateColorCodes('&', msg).replace("%server-name%", Bukkit.getServer().getServerName()).replace("%server-motd%", Bukkit.getServer().getMotd()).replace("%version%", Bukkit.getServer().getBukkitVersion()).replace("%server-port%", serverport).replace("%monster-spawn-limit%", monsterlimit).replace("%online%", online));
+				getServer().broadcastMessage(String.valueOf(ChatColor.translateAlternateColorCodes('&', getConfig().getString("Prefix"))) + " " + ChatColor.translateAlternateColorCodes('&', msg).replace("%server-name%", Bukkit.getServer().getName()).replace("%server-motd%", Bukkit.getServer().getMotd()).replace("%version%", Bukkit.getServer().getBukkitVersion()).replace("%server-port%", serverport).replace("%monster-spawn-limit%", monsterlimit).replace("%online%", online));
 				soundonbroadcast();
 			}
 			else {
@@ -125,7 +125,7 @@ public class SimpleBroadcast extends JavaPlugin {
 		String msg = list.get(currentLine);
 
 		String message = String.valueOf(ChatColor.translateAlternateColorCodes('&', prefix)) + " " + ChatColor.translateAlternateColorCodes('&', msg)
-				.replace("%server-name%", Bukkit.getServer().getServerName())
+				.replace("%server-name%", Bukkit.getServer().getName())
 				.replace("%server-motd%", Bukkit.getServer().getMotd())
 				.replace("%version%", Bukkit.getServer().getBukkitVersion())
 				.replace("%server-port%", Integer.toString(Bukkit.getServer().getPort()))
