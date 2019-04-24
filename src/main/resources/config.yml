@@ -8,7 +8,7 @@
 #   Sound-on-broadcast: #
 #      Enabled: true #Enables Sound-On-Broadcast!#
 #      Pitch: 5#Pitch of the sound#
-#      Sound: BLOCK_NOTE_HARP #Sound of the broadcast! See all sound here: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html#
+#      Sound: BLOCK_NOTE_BLOCK_HARP #Sound of the broadcast! See all sound here: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html#
 
 Prefix: '&3Broadcast &a>&e'
 Version: 5
@@ -16,5 +16,5 @@ Settings:
    Delay-Time: 2400
    Sound-on-broadcast:
       Enabled: true
-      Sound: BLOCK_NOTE_HARP
+      Sound: BLOCK_NOTE_BLOCK_HARP
       Pitch: 5
