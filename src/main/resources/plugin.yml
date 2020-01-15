@@ -1,7 +1,7 @@
-name: Simple-Broadcast
+name: ${project.name}
 main: ml.bmlzootown.SimpleBroadcast
-version: 2.0.1
-api-version: 1.14
+version: ${project.version}
+api-version: 1.15
 commands:
    broadcast:
       description: Broadcast to everyone your important message
