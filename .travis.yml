@@ -1,6 +1,6 @@
 language: java
 before_deploy:
-  - export TARGET=$(ls target/SimpleBroadcast-*.jar)
+  - export TARGET=$(ls target/Simple-Broadcast-*.jar)
 deploy:
   provider: releases
   api_key:
